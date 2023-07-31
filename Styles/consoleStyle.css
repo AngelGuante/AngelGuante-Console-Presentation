@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+}
+
+.upperBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: #372819;
+    padding-left: 6px;
+    height: 31px;
+    width: 100%;
+}
+
+.upperBar_user_icon {
+    margin-right: 4px;
+}
+
+.upperBar_leftContent {
+    display: flex;
+    align-items: center;
+}
+
+.upperBar_rigthContent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.upperBar_rigthContent_button {
+    background-color: #e5e5e5;
+    padding: 10px 15px;
+    margin-left: 1px;
+    cursor: not-allowed;
+}
