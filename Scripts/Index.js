@@ -38,6 +38,20 @@ const InputEventMethod = event => {
             const content = (document.getElementsByClassName('content'))[0]
             content.appendChild(divText)
         }
+        if (value === '2') {
+            AddSkill('C Sharp', 8, 'Advanced')
+            AddSkill('JavaScript', 6, 'Intermediate')
+            AddSkill('HTML5', 6, 'Intermediate')
+            AddSkill('English', 6, 'B1')
+            AddSkill('React', 5, 'Intermediate')
+            AddSkill('SQL', 5, 'Intermediate')
+            AddSkill('CSS', 3, 'Elementary')
+        }
+        if (value === '3') {
+            AddContact('Mail', 'Miguel_Guante@Outlook.com')
+            AddContact('GitHub', 'https://github.com/AngelGuante')
+            AddContact('LinkedIn', 'https://www.linkedin.com/in/miguel-angel-guante-suero/')
+        }
         else {
             const span = document.createElement('span')
             span.setAttribute('class', 'span')
@@ -48,6 +62,53 @@ const InputEventMethod = event => {
         }
         AddInputSpans()
     }
+}
+
+const AddSkill = (languaje, points, rateLabel) => {
+    const div = document.createElement('div')
+
+    const language_span = document.createElement('span')
+    language_span.setAttribute('class', 'span_skills')
+    language_span.textContent = `- ${languaje}`
+
+
+    const languajePoints_span = document.createElement('span')
+    languajePoints_span.setAttribute('class', 'span_skills')
+    languajePoints_span.textContent = new Array(points).fill('⭐').join('')
+
+    const languajeRate_span = document.createElement('span')
+    languajeRate_span.setAttribute('class', 'span_skills')
+    languajeRate_span.textContent = `(${points}/10)`
+
+    const languajeRateLabel_span = document.createElement('span')
+    languajeRateLabel_span.setAttribute('class', 'span_skills')
+    languajeRateLabel_span.textContent = `- ${rateLabel}`
+
+    const content = (document.getElementsByClassName('content'))[0]
+    div.appendChild(language_span)
+    div.appendChild(languajePoints_span)
+    div.appendChild(languajeRate_span)
+    div.appendChild(languajeRateLabel_span)
+
+    content.appendChild(div)
+}
+
+const AddContact = (type, contact) => {
+    const div = document.createElement('div')
+
+    const type_span = document.createElement('span')
+    type_span.setAttribute('class', 'span_skills')
+    type_span.textContent = `${type}`
+
+    const contact_a = document.createElement('a')
+    contact_a.setAttribute('class', 'span_skills')
+    contact_a.textContent = `${contact}`
+
+    const content = (document.getElementsByClassName('content'))[0]
+    div.appendChild(type_span)
+    div.appendChild(contact_a)
+
+    content.appendChild(div)
 }
 
 const AddInputSpans = () => {

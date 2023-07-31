@@ -75,3 +75,8 @@ input {
 .content .span{
     color: #b8b5af;
 }
+
+.content .span_skills{
+    color: #b8b5af;
+    padding-right: 16px;
+}
