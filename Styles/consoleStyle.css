@@ -37,6 +37,17 @@ body {
     padding: 2px;
 }
 
+.content .content_startingProject{
+    margin: 12px 0px;
+}
+
+.content .content_startingProject .span_starting{
+    color: #31a3cc;
+}
+.content .content_startingProject .span_successfully{
+    color: #12b912;
+}
+
 .content .content_input .content_input_line1 .span1{
     color: #009e00;
     padding-right: 4px;
@@ -51,6 +62,6 @@ body {
     color: #bab900;
 }
 
-.content .content_input .content_input_line .span{
+.content .span{
     color: #b8b5af;
 }
