@@ -32,3 +32,25 @@ body {
     margin-left: 1px;
     cursor: not-allowed;
 }
+
+.content {
+    padding: 2px;
+}
+
+.content .content_input .content_input_line1 .span1{
+    color: #009e00;
+    padding-right: 4px;
+}
+
+.content .content_input .content_input_line1 .span2{
+    padding-right: 4px;
+    color: #8f0081;
+}
+
+.content .content_input .content_input_line1 .span3{
+    color: #bab900;
+}
+
+.content .content_input .content_input_line .span{
+    color: #b8b5af;
+}
