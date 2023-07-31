@@ -42,7 +42,7 @@ const InputEventMethod = event => {
             AddSkill('C Sharp', 8, 'Advanced')
             AddSkill('JavaScript', 6, 'Intermediate')
             AddSkill('HTML5', 6, 'Intermediate')
-            AddSkill('English', 6, 'B1')
+            AddSkill('English', 6, 'B2')
             AddSkill('React', 5, 'Intermediate')
             AddSkill('SQL', 5, 'Intermediate')
             AddSkill('CSS', 3, 'Elementary')
